@@ -1,4 +1,4 @@
-Q-2
+Question1
 #include <bits/stdc++.h>
 using namespace std;
 class subject {
