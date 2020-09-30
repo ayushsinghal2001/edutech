@@ -3,12 +3,12 @@ Question1
 using namespace std;
 class subject {
 protected:
-int subID, credit, semester, attndCutoff;
+int sub, credit, semester, attndCutoff;
 public:
 subject() {
 int x;
 x = rand()%10000+10000;
-subID = x;
+sub = x;
 x = rand()%8+1;
 semester = x;
 }
@@ -241,8 +241,8 @@ cout << "\nSubject not found!!\n";
 }
 void query2(student *st[], int no_of_stud) {
 cout << "\nEnter the subjectID for which you want to see debarred students: ";
-int sub_id;
-cin >> sub_id;
+int sub;
+cin >> sub;
 bool flag = 0;
 for (int i = 0; i < no_of_stud; i++) {
 if (st[i]->dbar(sub_id)) {
